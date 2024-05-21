@@ -123,7 +123,6 @@ class Text2TextModel(nn.Module):
 
             return torch.cat(preds, 0)
 
-
 class Beam(object):
     def __init__(self, size, sos, eos):
         self.size = size
@@ -236,7 +235,6 @@ class Beam(object):
         return sentence
 
 
-
 encoder = roberta_model
 decoder_layer = nn.TransformerDecoderLayer(d_model=config.hidden_size, nhead=config.num_attention_heads)
 decoder = nn.TransformerDecoder(decoder_layer, num_layers=6)
@@ -246,7 +244,6 @@ model = Text2TextModel(encoder=encoder, decoder=decoder, config=config, beam_siz
 model.load_state_dict(torch.load('path_to_your_commonvoice_ted_model.bin'), strict=False)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(DEVICE)
-
 
 
 batch_size = 64
@@ -396,7 +393,6 @@ for epoch in range(num_epochs):
         total_loss += loss.sum().item()
     
     avg_train_loss = total_loss / (len(train_data) // batch_size)
-    
 
 # evaluation
     model.eval()
