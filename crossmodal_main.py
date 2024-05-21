@@ -137,7 +137,6 @@ class Text2TextModel(nn.Module):
 
             return torch.cat(preds, 0)
 
-
 class Beam(object):
     def __init__(self, size, sos, eos):
         self.size = size
@@ -406,7 +405,6 @@ for epoch in range(num_epochs):
         total_loss += loss.sum().item()
     
     avg_train_loss = total_loss / (len(train_data) // batch_size)
-    
 
 # evaluation
     model.eval()
