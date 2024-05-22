@@ -1,4 +1,4 @@
-The pre-trained model can be downloaded here: [https://drive.google.com/file/d/1xjWRr1GDhwQZxHnx2fQNA7P5_W_iBOZJ/view?usp=sharing](https://huggingface.co/YC-Li/Sequence-to-Sequence-ASR-Error-Correction)
+The pre-trained model can be downloaded on Hugging Face: https://huggingface.co/YC-Li/Sequence-to-Sequence-ASR-Error-Correction
 
 To use the text-only AEC model, please refer to ``text_only_main.py``. You only need to prepare your asr transcript and groundtruth data.
 
