@@ -5,3 +5,14 @@ To use the text-only AEC model, please refer to ``text_only_main.py``. You only 
 To use the crossmodal AEC model, please refer to ``crossmodal_main.py``. You need to generate your own discrete speech units first before using the code.
 
 Models for continuous audio features are omitted. You can simply modify the model architecture (e.g., rescaling, downsampling) and integrate audio feature extraction in ``crossmodal_main.py``.
+
+You may kindly cite
+
+```
+@article{li2024crossmodal,
+  title={Crossmodal ASR Error Correction with Discrete Speech Units},
+  author={Li, Yuanchao and Chen, Pinzhen and Bell, Peter and Lai, Catherine},
+  journal={arXiv preprint arXiv:2405.16677},
+  year={2024}
+}
+```
