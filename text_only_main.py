@@ -27,7 +27,10 @@ torch.manual_seed(42)
 torch.cuda.manual_seed_all(42)
 
 
-# load your data
+"""
+Data preparation
+"""
+
 data_truth = 'your_groundtruth_path.txt'
 data_trans = 'your_asrtranscript_path.txt'
 
@@ -46,7 +49,10 @@ train_truth, train_trans = zip(*train_data)
 val_truth, val_trans = zip(*val_data)
 
 
-# AEC model -- text only
+"""
+ASR error correction model -- text only
+"""
+
 class Text2TextModel(nn.Module):
     """
         * `encoder`- encoder of the sequence-to-sequence model, e.g. "bert-base-uncased".
@@ -234,6 +240,10 @@ class Beam(object):
             sentence.append(tokens)
         return sentence
 
+
+"""
+Model training
+"""
 
 encoder = roberta_model
 decoder_layer = nn.TransformerDecoderLayer(d_model=config.hidden_size, nhead=config.num_attention_heads)
