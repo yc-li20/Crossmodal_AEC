@@ -26,6 +26,9 @@ np.random.seed(42)
 torch.manual_seed(42)
 torch.cuda.manual_seed_all(42)
 
+```
+Data preparation
+```
 
 # load your text data
 data_truth = 'your_groundtruth_path.txt'
@@ -58,7 +61,10 @@ train_audio = torch.from_numpy(train_audio)
 val_audio = torch.from_numpy(val_audio)
 
 
-# AEC model -- crossmodal
+```
+# ASR error correction model -- crossmodal
+```
+
 class Text2TextModel(nn.Module):
     """
         * `encoder`- encoder of the sequence-to-sequence model, e.g. "bert-base-uncased".
@@ -245,6 +251,10 @@ class Beam(object):
             sentence.append(tokens)
         return sentence
 
+
+```
+Model training
+```
 
 encoder = roberta_model
 decoder_layer = nn.TransformerDecoderLayer(d_model=config.hidden_size, nhead=config.num_attention_heads)
