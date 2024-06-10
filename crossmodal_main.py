@@ -61,9 +61,9 @@ train_audio = torch.from_numpy(train_audio)
 val_audio = torch.from_numpy(val_audio)
 
 
-```
-# ASR error correction model -- crossmodal
-```
+"""
+ASR error correction model -- crossmodal
+"""
 
 class Text2TextModel(nn.Module):
     """
@@ -252,9 +252,9 @@ class Beam(object):
         return sentence
 
 
-```
+"""
 Model training
-```
+"""
 
 encoder = roberta_model
 decoder_layer = nn.TransformerDecoderLayer(d_model=config.hidden_size, nhead=config.num_attention_heads)
