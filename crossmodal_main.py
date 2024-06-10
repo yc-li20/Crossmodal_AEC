@@ -26,9 +26,9 @@ np.random.seed(42)
 torch.manual_seed(42)
 torch.cuda.manual_seed_all(42)
 
-```
+"""
 Data preparation
-```
+"""
 
 # load your text data
 data_truth = 'your_groundtruth_path.txt'
