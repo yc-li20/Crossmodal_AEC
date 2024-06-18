@@ -4,7 +4,7 @@ To use the text-only AEC model, please refer to the folder ``text_only`` or the 
 
 To use the crossmodal AEC model, please refer to the folder ``crossmodal`` or the all-in-one file ``crossmodal.py``. You need to generate your own discrete speech units first before using the code.
 
-Models for continuous audio features are omitted. You can simply modify the model architecture (e.g., rescaling, downsampling) and integrate audio feature extraction in ``crossmodal_main.py``.
+Models for continuous audio features are omitted. You can simply modify the model architecture (e.g., rescaling, downsampling) and integrate audio feature extraction in the model.
 
 You may kindly cite
 
