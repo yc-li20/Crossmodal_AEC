@@ -9,10 +9,12 @@ Models for continuous audio features are omitted. You can simply modify the mode
 You may kindly cite
 
 ```
-@article{li2024crossmodal,
-  title={Crossmodal ASR Error Correction with Discrete Speech Units},
+@inproceedings{li2024crossmodal,
+  title={Crossmodal ASR error correction with discrete speech units},
   author={Li, Yuanchao and Chen, Pinzhen and Bell, Peter and Lai, Catherine},
-  journal={arXiv preprint arXiv:2405.16677},
-  year={2024}
+  booktitle={2024 IEEE Spoken Language Technology Workshop (SLT)},
+  pages={431--438},
+  year={2024},
+  organization={IEEE}
 }
 ```
